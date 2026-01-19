@@ -1,0 +1,150 @@
+2026-Jan-19-07:01:44 | INFO | Log Setup Completed Successfully : Logs will now be written to log file.
+2026-Jan-19-07:01:44 | INFO | Start Time : 2026-Jan-19-07:01:44
+2026-Jan-19-07:01:50 | INFO | The libraries were imported successfully.
+
+2026-Jan-19-07:01:50 | INFO | ============================== Step 1 : Loading Phase ===============================
+2026-Jan-19-07:01:50 | INFO | The Dataset has been read successfully.
+2026-Jan-19-07:01:50 | INFO | The DataFrame has 15,915 Observations and 23 Features.
+2026-Jan-19-07:01:50 | INFO | ========================== Step 1 : Loading Phase Completed ===========================
+
+2026-Jan-19-07:01:50 | INFO | ====================== Step 2 : Analysis and Feature Engineering ======================
+2026-Jan-19-07:01:50 | INFO | ---------------- Preliminary Analysis Phase and Frequency Distributions ---------------
+2026-Jan-19-07:01:51 | INFO | Our DataFrame contains 0 Missing Values in total.
+2026-Jan-19-07:01:51 | DEBUG | All features in our Dataset has been accounted for and classified correctly.
+2026-Jan-19-07:01:51 | DEBUG | ggplot style has been implemented.
+
+2026-Jan-19-07:01:51 | INFO | ------------------- Frequency Distributions of Numerical Features -------------------
+2026-Jan-19-07:01:51 | DEBUG | Custom Histogram Reusable Function - Analyzing continuous numerical features.
+2026-Jan-19-07:01:52 | DEBUG | 1st Numerical Feature - Distribution of Distance (Kilometre Driven)
+2026-Jan-19-07:01:52 | DEBUG | 2nd Numerical Feature - Distribution of Engine power in Kilowatts (kW)
+2026-Jan-19-07:01:53 | DEBUG | 3rd Numerical Feature - Distribution of Engine Displacement in Cubic Centimeters (cc)
+2026-Jan-19-07:01:53 | DEBUG | 4th Numerical Feature - Distribution of Total Weight of the Vehicle in Kilograms (kg)
+2026-Jan-19-07:01:54 | DEBUG | 5th Numerical Feature - Distribution of Combined Fuel Consumption (L/100 km)
+2026-Jan-19-07:01:54 | DEBUG | 6th Numerical Feature - Distribution of Vehicle Age Quartile Distribution Analysis
+2026-Jan-19-07:01:55 | DEBUG | 7th Numerical Feature - Distribution of Previous Owners
+2026-Jan-19-07:01:55 | INFO | -------------- Completed Frequency Distributions of Numerical Features ---------------
+
+2026-Jan-19-07:01:55 | INFO | ------------------- Frequency Distributions of Categorical Features ------------------
+2026-Jan-19-07:01:55 | DEBUG | Custom Bar Chart Reusable Function - Analyzing categorical features.
+2026-Jan-19-07:01:55 | DEBUG | 1st Categorical Feature - Distribution of Car Models
+2026-Jan-19-07:01:55 | DEBUG | 2nd Categorical Feature - Distribution of Car Body Types
+2026-Jan-19-07:01:55 | DEBUG | 3rd Categorical Feature - Distribution of Value Added Tax (VAT) Categories
+2026-Jan-19-07:01:56 | DEBUG | 4th Categorical Feature - Distribution of Vehicle Condition Types
+2026-Jan-19-07:01:56 | DEBUG | 5th Categorical Feature - Distribution of Vehicle Fuel Types
+2026-Jan-19-07:01:56 | DEBUG | 6th Categorical Feature - Distribution of Vehicle Gear
+2026-Jan-19-07:01:56 | DEBUG | 7th Categorical Feature - Distribution of Vehicle Inspection
+2026-Jan-19-07:01:57 | DEBUG | 8th Categorical Feature - Distribution of Vehicle Paint Types
+2026-Jan-19-07:01:57 | DEBUG | 9th Categorical Feature - Distribution of Upholstery Types
+2026-Jan-19-07:01:57 | DEBUG | 10th Categorical Feature - Distribution of Gear Types
+2026-Jan-19-07:01:57 | DEBUG | 11th Categorical Feature - Distribution of Drivetrain Types
+2026-Jan-19-07:01:57 | WARNING | Feature --> Drive_chain is incorrect --> Change to Drive_train
+2026-Jan-19-07:01:57 | INFO | -------------- Completed Frequency Distributions of Categorical Features --------------
+
+2026-Jan-19-07:01:58 | INFO | ---------------- Frequency Distributions of Multi-Categorical Features ----------------
+2026-Jan-19-07:01:58 | DEBUG | 1st Multi-Categorical Feature - Top 10 Comfort and Convenience Features
+2026-Jan-19-07:01:58 | DEBUG | 2nd Multi-Categorical Feature - Distribution of Entertainment and Media Features
+2026-Jan-19-07:01:59 | DEBUG | 3rd Multi-Categorical Feature - Distribution of Top 10 Extra Features
+2026-Jan-19-07:01:59 | DEBUG | 4th Multi-Categorical Feature - Distribution of Top 10 Safety Features
+2026-Jan-19-07:01:59 | INFO | ----------- Completed Frequency Distributions of Multi-Categorical Features -----------
+
+2026-Jan-19-07:01:59 | INFO | ------------------------- Analyzing and Fixing Class Imbalance ------------------------
+2026-Jan-19-07:01:59 | DEBUG | Custom Comparison Pie Chart Reusable Function - Analyzing  Class Imbalance.
+2026-Jan-19-07:01:59 | DEBUG | 1st Feature with Class Imbalance : Paint Type [Analyzed and Fixed]
+2026-Jan-19-07:01:59 | INFO | Feature --> Drive_chain --> Changed to Drivetrain
+2026-Jan-19-07:02:00 | DEBUG | 2nd Feature with Class Imbalance : Drive Train [Analyzed and Fixed]
+2026-Jan-19-07:02:00 | DEBUG | 3rd Feature with Class Imbalance : Vehicles Model [Analyzed and Fixed]
+2026-Jan-19-07:02:01 | DEBUG | 4th Feature with Class Imbalance : Vehicles Gearing Type [Analyzed and Fixed]
+2026-Jan-19-07:02:01 | DEBUG | 5th Feature with Class Imbalance : Fuel Type [Analyzed and Fixed]
+2026-Jan-19-07:02:01 | DEBUG | 6th Feature with Class Imbalance : Vehicles Condtion [Analyzed and Fixed]
+2026-Jan-19-07:02:02 | DEBUG | 7th Feature with Class Imbalance : Vehicles Body Type [Analyzed and Fixed]
+2026-Jan-19-07:02:02 | DEBUG | Feature names have been standardized successfully.
+2026-Jan-19-07:02:02 | INFO | -------------------- Completed Analyzing and Fixing Class Imbalance -------------------
+
+2026-Jan-19-07:02:02 | INFO | -------------- Analyzing and Applying Transformations on Target Variable --------------
+2026-Jan-19-07:02:02 | DEBUG | Target Variable ----> Vehicle Price ['price']
+2026-Jan-19-07:02:03 | INFO | Target Feature Transformation : Applied log1p() to Vehicle Listed Price
+2026-Jan-19-07:02:03 | DEBUG | Target Variable - Distribution of Log-Transformed Vehicle Listed Price
+2026-Jan-19-07:02:03 | INFO | --------- Completed Analyzing and Applying Transformations on Target Variable ---------
+2026-Jan-19-07:02:03 | INFO | ------------------------- Completed Preliminary Analysis Phase ------------------------
+
+2026-Jan-19-07:02:03 | INFO | -------------------------------- Correlation Analysis ---------------------------------
+2026-Jan-19-07:02:03 | DEBUG | Correlation Analysis - Correlation between Numerical Features and Target Variable
+2026-Jan-19-07:02:06 | DEBUG | Correlation Analysis - Correlation between Categorical Features and Target Variable
+2026-Jan-19-07:02:06 | INFO | --------------------------- Completed Correlation Analysis ----------------------------
+
+2026-Jan-19-07:02:06 | INFO | ---------------------------------- Outlier Analysis -----------------------------------
+2026-Jan-19-07:02:06 | DEBUG | Statistical Analysis - Performed on Numerical Features
+2026-Jan-19-07:02:06 | DEBUG | Quantile Based Analysis - Performed on Numerical Features
+2026-Jan-19-07:02:06 | DEBUG | Note: Vehicle Age and Number of Previous Owners do not need outlier handling.
+2026-Jan-19-07:02:06 | DEBUG | Negative Value Analysis (Sanity Check) - Performed on Numerical Features
+2026-Jan-19-07:02:07 | DEBUG | Outlier Analysis 1: Total Mileage in (km) [Upper-Tail Winsorization]
+2026-Jan-19-07:02:07 | DEBUG | Outlier Analysis 2: Engine Power in (kW) [Upper-Tail Winsorization]
+2026-Jan-19-07:02:07 | DEBUG | Outlier Analysis 3: Engine Displacement in (cc) [Upper-Tail Winsorization]
+2026-Jan-19-07:02:07 | DEBUG | Outlier Analysis 4: Vehicle Weight in (kg) [Upper-Tail Winsorization]
+2026-Jan-19-07:02:07 | DEBUG | Outlier Analysis 5: Combined Fuel Consumption in (L/100km) [Upper-Tail Winsorization]
+2026-Jan-19-07:02:07 | INFO | ----------------------------- Completed Outlier Analysis ------------------------------
+
+2026-Jan-19-07:02:07 | INFO | --------------------------------- Feature Engineering ---------------------------------
+2026-Jan-19-07:02:07 | INFO | Feature Engineering - Multi-Categorical Features [Multi-Hot Encoding]
+2026-Jan-19-07:02:07 | DEBUG | The Total Number of Features after applying Multi-hot Encoding : {df.shape[1]}
+2026-Jan-19-07:02:07 | DEBUG | 1st Multi-Categorical Feature : Comfort Convenience (Feature Engineering)
+2026-Jan-19-07:02:08 | DEBUG | 2nd Multi-Categorical Feature : Entertainment Media (Feature Engineering)
+2026-Jan-19-07:02:08 | DEBUG | 3rd Multi-Categorical Feature : Extra Features (Feature Engineering)
+2026-Jan-19-07:02:08 | DEBUG | 4th Multi-Categorical Feature : Safety and Security Features (Feature Engineering)
+2026-Jan-19-07:02:08 | DEBUG | After applying Feature Aggregation Strategy to mitigate the Curse of Dimensionality: {df.shape[1]} Features.
+2026-Jan-19-07:02:08 | INFO | Feature Engineering - Categorical Features [One-Hot Encoding] (Completed)
+2026-Jan-19-07:02:08 | INFO | Feature names have been standardized successfully after Feature Engineering.
+2026-Jan-19-07:02:08 | INFO | Proportions for the Training Set Verified Successfully [80% Training]
+2026-Jan-19-07:02:08 | INFO | Proportions for the Testing Set Verified Successfully [20% Testing]
+2026-Jan-19-07:02:08 | INFO | Data Integrity: Verified Successfully
+2026-Jan-19-07:02:08 | INFO | The Data has been split successfully into Training and Testing Sets [80:20].
+2026-Jan-19-07:02:08 | INFO | Features have been scaled successfully after Feature Engineering.
+2026-Jan-19-07:02:08 | INFO | Binary features have intentionally been excluded from Feature Scaling.
+2026-Jan-19-07:02:08 | INFO | ---------------------------- Completed Feature Engineering ----------------------------
+2026-Jan-19-07:02:08 | INFO | ================= Step 2 : Analysis and Feature Engineering Completed =================
+
+2026-Jan-19-07:02:08 | INFO | ====================== Step 3 : Building Linear Regression Models =====================
+2026-Jan-19-07:02:08 | INFO | -------------------------- Baseline Linear Regression Models --------------------------
+2026-Jan-19-07:02:08 | DEBUG | Experiment A [Keyword : 'Any']   - Linear Regression Baseline Model
+2026-Jan-19-07:02:08 | DEBUG | Experiment B [Keyword : 'Count'] - Linear Regression Baseline Model
+2026-Jan-19-07:02:08 | DEBUG | Custom Function: Visualizing and Comparing Training and Testing Fit
+2026-Jan-19-07:02:09 | DEBUG | Visualizing and Comparing the Training and Testing Fit for both Experiment A and B.
+2026-Jan-19-07:02:09 | DEBUG | Custom Function [Evaluation Metrics] - Evaluating Linear Regression Model Performance.
+2026-Jan-19-07:02:09 | DEBUG | Evaluation: Model performance for both Experiment A and B (Log-Listed Price)
+2026-Jan-19-07:02:09 | DEBUG | Evaluation: Model performance for both Experiment A and B (Actual Listed Price)
+2026-Jan-19-07:02:09 | INFO | Final Verdict - Experiment A: [Keyword 'Any'] Linear Regression Baseline Model
+2026-Jan-19-07:02:10 | DEBUG | Diagnostic Plot [Training and Testing]: Analyzing Residuals vs Predicted Log-Transformed Listed Price
+2026-Jan-19-07:02:10 | DEBUG | Residual Distribution Analysis [Training and Testing Residuals][Histogram]
+2026-Jan-19-07:02:12 | DEBUG | Custom Function [VIF Score] - Checking Multicollinearity
+2026-Jan-19-07:02:12 | INFO | --------------- [Completed] Completed Baseline Linear Regression Models ---------------
+
+2026-Jan-19-07:02:12 | INFO | ---------------------- L2 Regularization: Ridge Regression Models ---------------------
+2026-Jan-19-07:02:25 | DEBUG | L2 Regularization: Ridge Regression with 5-Fold-CV [Based on R2 Score]
+2026-Jan-19-07:02:38 | DEBUG | L2 Regularization: Ridge Regression with 5-Fold-CV [Based on MAE]
+2026-Jan-19-07:02:38 | DEBUG | Final Decision - Model 2 - R2: Has a more active regularization. [Squared-Error-Optimization]
+2026-Jan-19-07:02:57 | DEBUG | L2 Regularization: Ridge Regression with 5-Fold-CV [Based on R2 Score] Fine-Tuned Alpha - 2.89447
+2026-Jan-19-07:02:57 | INFO | L2 Regularization: Fine-Tuned Ridge Regression Model built successfully.
+2026-Jan-19-07:02:57 | DEBUG | Evaluation [L2 Regularization]: Fine-Tuned Ridge Regression Model evaluation metrics generated.
+2026-Jan-19-07:03:02 | DEBUG | Visualizing Fine-Tuned Ridge Regression [Hold-Out-Method]: Training vs Testing R2 Scores across Alphas
+2026-Jan-19-07:03:02 | DEBUG | L2 Regularization: Coefficients have been preserved from Fine-Tuned Ridge Regression Model.
+2026-Jan-19-07:03:02 | INFO | ---------------- [Completed] L2 Regularization: Ridge Regression Models ---------------
+
+2026-Jan-19-07:03:02 | INFO | ---------------------- L1 Regularization: Lasso Regression Models ---------------------
+2026-Jan-19-07:03:11 | DEBUG | L1 Regularization: Lasso Regression with 5-Fold-Cross-Validation to select optimal value of Alpha (Based on MSE)
+2026-Jan-19-07:03:53 | DEBUG | L1 Regularization: Lasso Regression with 5-Fold-Cross-Validation to select optimal value of Alpha (Based on MAE)
+2026-Jan-19-07:03:53 | DEBUG | Model 2 - MAE: (GridSearchCV) --> Preferable Choice for consistent average accuracy.
+2026-Jan-19-07:04:04 | DEBUG | [Fine-Tuned-L1-Regularization][Error-Alpha-Analysis] 5-Fold Cross-Validation-Grid-Search Lasso Regression: Negative MAE vs Alpha
+2026-Jan-19-07:04:11 | DEBUG | Visualizing Fine-Tuned Lasso Regression [Hold-Out-Method]: Training vs Testing R2 Scores across Alphas
+2026-Jan-19-07:04:12 | DEBUG | Evaluation [L1 Regularization]: Fine-Tuned Lasso Regression Model evaluation metrics generated.
+2026-Jan-19-07:04:12 | DEBUG | L1 Regularization: Coefficients have been preserved from Fine-Tuned Lasso Regression Model.
+2026-Jan-19-07:04:12 | INFO | ---------------- [Completed] L1 Regularization: Lasso Regression Models ---------------
+2026-Jan-19-07:04:12 | INFO | ================= Step 3 : Building Linear Regression Models Completed ================
+
+2026-Jan-19-07:04:12 | INFO | ===================== Step 4 : Regularization Comparison & Analysis ===================
+2026-Jan-19-07:04:12 | DEBUG | Comparison Table - Evaluation Metrics Across Linear Regression Models.
+2026-Jan-19-07:04:12 | DEBUG | Baseline Linear Regression: Coefficients have been preserved from Baseline Regression Model.
+2026-Jan-19-07:04:12 | DEBUG | Visualization - Comparing Top 10 Highest Coefficients.
+2026-Jan-19-07:04:12 | INFO | ================== Step 4 : Regularization Comparison Phase Completed =================
+
+2026-Jan-19-07:04:12 | INFO | End Time : 2026-Jan-19-07:04:12
+2026-Jan-19-07:04:12 | INFO | Notebook Runtime : 2 minutes and 28 seconds
