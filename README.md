@@ -19,10 +19,10 @@ It focuses on both **predictive accuracy** and **model interpretability**, apply
 ## 🎯 Key Objectives  
 - Predict used car prices using regression models  
 - Identify key price-driving features  
-- Apply Ridge & Lasso to reduce overfitting  
-- Compare models using MAE and R²  
-- Build interpretable models  
-
+- Apply Ridge & Lasso to reduce overfitting
+- Build interpretable models 
+- Compare Baseline Linear Regression, Ridge, and Lasso models
+ 
 ---
 
 ## 🧹 Data Preparation  
@@ -38,7 +38,6 @@ It focuses on both **predictive accuracy** and **model interpretability**, apply
 - Correlation and outlier diagnostics  
 - Model comparison: Linear vs Ridge vs Lasso  
 - Feature importance using model coefficients  
-
 
 ---
 
